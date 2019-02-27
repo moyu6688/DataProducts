@@ -1,0 +1,19 @@
+---
+title: "LA Map"
+author: "Yu Mo"
+date: "February 27, 2019"
+output: html_document
+---
+
+## Louisiana, US
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map<-leaflet() %>%
+  addTiles() 
+my_map<-my_map %>%
+  addMarkers(lat=29.9922, lng=-90.2590,
+             popup="New Orleans Airport")
+my_map
+```
+
